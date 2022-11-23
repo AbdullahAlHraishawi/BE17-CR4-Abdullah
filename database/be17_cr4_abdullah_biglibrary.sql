@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 23, 2022 at 04:26 PM
+-- Generation Time: Nov 23, 2022 at 05:35 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -46,7 +46,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `title`, `image`, `isbn_code`, `description`, `type`, `author_first_name`, `author_last_name`, `publisher_name`, `publisher_address`, `publischer_date`) VALUES
-(1, 'The Hobbit', 'https://m.media-amazon.com/images/I/413V3sIKSJL._AC_SY780_.jpg', '9781234562', 'The Hobbit, or There and Back Again is a children\'s fantasy novel by English author J. R. R. Tolkien. It was published in 1937 to wide critical acclaim, being nominated for the Carnegie Medal and awarded a prize from the New York Herald Tribune for best juvenile fiction.', 'Book', 'John', 'Tolkien', 'George Allen & Unwin', 'Crows Nest, New South Wales, Australia', '1937-09-21'),
+(1, 'The Hobbit1', 'https://m.media-amazon.com/images/I/413V3sIKSJL._AC_SY780_.jpg', '9781234562', 'The Hobbit, or There and Back Again is a children\'s fantasy novel by English author J. R. R. Tolkien. It was published in 1937 to wide critical acclaim, being nominated for the Carnegie Medal and awarded a prize from the New York Herald Tribune for best juvenile fiction.', 'Book', 'John', 'Tolkien', 'George Allen & Unwin', 'Crows Nest, New South Wales, Australia', '1937-09-21'),
 (2, 'The Alchemist', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1466865681l/25076674._SY475_.jpg', '1654368435', 'The Alchemist is a novel by Brazilian author Paulo Coelho which was first published in 1988. Originally written in Portuguese, it became a widely translated international bestseller.', 'Book', 'Paulo', 'Coelho', 'HarperTorch', '195 Broadway\r\nNew York City, New York, U.S.', '1993-04-25'),
 (3, 'The Little Prince', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVT-WqHTqYSdnNZC3scEcz-Jm4x2-u9ng9ZfaT0YD0VM5ToBkZ', '2117613571', 'The Little Prince is a novella by French aristocrat, writer, and military aviator Antoine de Saint-Exupéry.', 'CD', 'Antoine', 'de Saint-Exupéry', '	Reynal & Hitchcock ', 'New York City', '1943-04-01'),
 (4, 'The Lord of the Rings', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtGi_7IbevVXH_GbtwVAAV7vGP2gFCYwJow34QIiyeX18s69-i', '9511327612', 'The Lord of the Rings is an epic high-fantasy novel by English author and scholar J. R. R. Tolkien. Set in Middle-earth, intended to be Earth at some time in the distant past, the story began as a sequel to Tolkien\'s 1937 children\'s book The Hobbit, but eventually developed into a much larger work.', 'Book', 'John', 'Tolkien', 'Allen & Unwin', 'Crows Nest, New South Wales, Australia', '1954-07-29'),
