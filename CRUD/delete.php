@@ -1,8 +1,8 @@
 <?php 
 require_once './actions/db_connect.php';
 
-if ($_GET['product_id']) {
-    $id = $_GET['product_id'];
+if ($_GET['id']) {
+    $id = $_GET['id'];
     $sql = "SELECT * FROM products WHERE product_id = {$id}" ;
     $result = mysqli_query($connect, $sql);
     $data = mysqli_fetch_assoc($result);
@@ -11,12 +11,13 @@ if ($_GET['product_id']) {
         $descrip = $data['description'];
         $picture = $data['image'];
     } else {
-        header("location: error.php");
+        // header("location: error.php");
     }
-    mysqli_close($connect);
+    
 } else {
-    header("location: error.php");
-}  
+    // header("location: error.php");
+}
+mysqli_close($connect);
 ?>
 
 <!DOCTYPE html>

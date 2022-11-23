@@ -1,22 +1,23 @@
 <?php
 require_once './actions/db_connect.php';
 
-if ($_GET['product_id']) {
-    $id = $_GET['product_id'];
-    $sql = "SELECT * FROM products WHERE id = {$id}";
+if ($_GET['id']) {
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM products WHERE product_id = {$id}";
     $result = mysqli_query($connect, $sql);
+    // var_dump($result);
     if (mysqli_num_rows($result) == 1) {
         $data = mysqli_fetch_assoc($result);
-        $name = $data['title'];
-        $descrip = $data['description'];
-        $picture = $data['image'];
+        $title = $data['title'];
+        $description = $data['description'];
+        $image = $data['image'];
     } else {
-        header("location: error.php");
+        // header("location: error.php");
     }
-    mysqli_close($connect);
 } else {
-    header("location: error.php");
+    // header("location: error.php");
 }
+mysqli_close($connect);
 ?>
 
 <!DOCTYPE html>
@@ -38,16 +39,16 @@ if ($_GET['product_id']) {
     </head>
     <body>
         <fieldset>
-            <legend class='h2'>Update request <img class='img-thumbnail rounded-circle' src='<?php echo $picture ?>' alt="<?php echo $name ?>"></legend>
+            <legend class='h2'>Update request <img class='img-thumbnail rounded-circle' src='<?php echo $image ?>' alt="<?php echo $title ?>"></legend>
             <form action="actions/a_update.php"  method="post" enctype="multipart/form-data">
                 <table class="table">
                     <tr>
                         <th>Title</th>
-                        <td><input class="form-control" type="text"  name="title" placeholder ="Product Name" value="<?php echo $name ?>"  /></td>
+                        <td><input class="form-control" type="text"  name="title" placeholder ="Product Name" value="<?php echo $title ?>"  /></td>
                     </tr>
                     <tr>
                         <th>Description</th>
-                        <td><input class="form-control" type= "number" name="description" step="any"  placeholder="Price" value ="<?php echo $descrip ?>" /></td>
+                        <td><input class="form-control" type= "text" name="description" step="any"  placeholder="Description" value ="<?php echo $description ?>" /></td>
                     </tr>
                     <tr>
                         <th>Image</th>

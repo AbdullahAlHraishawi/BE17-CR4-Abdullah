@@ -11,7 +11,9 @@ if(mysqli_num_rows($result)  > 0) {
             <td>" .$row['title']."</td>
             <td>" .$row['description']."</td>
             <td><a href='update.php?id=" .$row['product_id']."'><button id='editBtn' class='btn btn-primary btn-sm' type='button'>Edit</button></a>
-            <a href='delete.php?id=" .$row['product_id']."'><button class='btn btn-danger btn-sm' type='button'>Delete</button></a></td>
+            <a href='delete.php?id=" .$row['product_id']."'><button class='btn btn-danger btn-sm' type='button'>Delete</button></a>
+            <a href='details.php?id=" .$row['product_id']."'><button id='detailsBtn' class='btn btn-info btn-sm' type='button'>Details</button></a>
+            </td>
             </tr>";
     };
 } else {
@@ -29,7 +31,7 @@ mysqli_close($connect);
         <title>PHP CRUD</title>
         <?php require_once 'components/boot.php'?>
         <style type="text/css">
-            <?php require_once './style/style.php'?>
+            <?php require_once './style/style.css'?>
         </style>
     </head>
     <body>

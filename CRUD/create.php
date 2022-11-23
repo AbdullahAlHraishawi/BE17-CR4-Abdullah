@@ -23,6 +23,34 @@
                         <td><input class='form-control' type="text" name="name"  placeholder="Product Title" /></td>
                     </tr>    
                     <tr>
+                        <th>ISBN Code</th>
+                        <td><input class='form-control' type="text" name= "isbn" placeholder="ISBN Code comes here" step="any" /></td>
+                    </tr>
+                    <tr>
+                        <th>Type</th>
+                        <td><input class='form-control' type="text" name= "type" placeholder="Type comes here" step="any" /></td>
+                    </tr>
+                    <tr>
+                        <th>Author's First Name</th>
+                        <td><input class='form-control' type="text" name= "author_first_name" placeholder="Author's first name comes here" step="any" /></td>
+                    </tr>
+                    <tr>
+                        <th>Author's Last Name</th>
+                        <td><input class='form-control' type="text" name= "author_last_name" placeholder="Author's last name comes here" step="any" /></td>
+                    </tr>
+                    <tr>
+                        <th>Publisher's Name</th>
+                        <td><input class='form-control' type="text" name= "publisher_name" placeholder="Publisher name comes here" step="any" /></td>
+                    </tr>
+                    <tr>
+                        <th>Publisher's Address</th>
+                        <td><input class='form-control' type="text" name= "publisher_address" placeholder="Publisher Address comes here" step="any" /></td>
+                    </tr>
+                    <tr>
+                        <th>Publishing Date</th>
+                        <td><input class='form-control' type="date" name= "publisher_date" placeholder="Publishing Date comes here" step="any" /></td>
+                    </tr>
+                    <tr>
                         <th>Desctription</th>
                         <td><input class='form-control' type="text" name= "description" placeholder="Description comes here" step="any" /></td>
                     </tr>
